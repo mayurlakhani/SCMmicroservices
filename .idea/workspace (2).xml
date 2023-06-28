@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="96f5a753-4fdc-4750-9bc8-1970c511519c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/amqp/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amqp/src/main/java/com/amigoscode/amqp/RabbitMQConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amqp/src/main/java/com/amigoscode/amqp/RabbitMQMessageProducer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigw/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigw/src/main/java/com/amigoscode/apigw/ApiGWApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigw/src/main/resources/application-docker.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigw/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigw/src/main/resources/banner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clients/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/amigoscode/clients/fraud/FraudClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/amigoscode/clients/fraud/FraudClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/amigoscode/clients/notification/NotificationClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/amigoscode/clients/notification/NotificationClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/amigoscode/customer/CustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/amigoscode/customer/CustomerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/amigoscode/customer/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/amigoscode/customer/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/configmap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/service.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/statefulset.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/minikube/bootstrap/postgres/volume.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/minikube/bootstrap/rabbitmq/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/minikube/bootstrap/rabbitmq/configmap.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/minikube/bootstrap/rabbitmq/rbac.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/minikube/bootstrap/rabbitmq/services.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/minikube/bootstrap/rabbitmq/statefulset.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/minikube/bootstrap/zipkin/service.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/minikube/bootstrap/zipkin/statefulset.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/minikube/services/customer/deployment.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/minikube/services/customer/service.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/minikube/services/fraud/deployment.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/minikube/services/fraud/service.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/minikube/services/notification/deployment.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/minikube/services/notification/service.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/java/com/amigoscode/notification/Notification.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/java/com/amigoscode/notification/NotificationApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/java/com/amigoscode/notification/NotificationConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/java/com/amigoscode/notification/NotificationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/java/com/amigoscode/notification/NotificationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/java/com/amigoscode/notification/NotificationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/java/com/amigoscode/notification/rabbitmq/NotificationConsumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/resources/application-docker.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/resources/application-kube.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/resources/banner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2RpgXBQv0Yk0CEudx7LG9LXlUt9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/intellij/Test/microservices",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.FraudApplication">
+    <configuration name="CustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="customer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.amigoscode.customer.CustomerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.amigoscode.eurekaserver.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FraudApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="fraud" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.amigoscode.fraud.FraudApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="96f5a753-4fdc-4750-9bc8-1970c511519c" name="Changes" comment="" />
+      <created>1687952475479</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687952475479</updated>
+      <workItem from="1687952484175" duration="3102000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
