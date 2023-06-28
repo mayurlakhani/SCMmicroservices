@@ -4,6 +4,11 @@ server:
 spring:
   application:
     name: api-gateway
+  sleuth:
+    sampler:
+      probability: 1.0
+  zipkin:
+    base-url: http://localhost:9411
   cloud:
     gateway:
       routes:
@@ -19,6 +24,14 @@ spring:
           uri: lb://ORDER-SERVICE
           predicates:
             - Path=/api/order
+        - id: api-gateway
+          uri: http://localhost:8761
+          predicates:
+            - Path=/eureka/web
+        - id: api-gateway
+          uri: http://localhost:8761
+          predicates:
+            - Path=/eureka/**
 eureka:
   client:
     service-url:

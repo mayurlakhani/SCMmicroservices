@@ -9,6 +9,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @SpringBootApplication
 @Slf4j
 @EnableEurekaClient
@@ -28,13 +31,13 @@ public class InventoryServiceApplication {
             Inventory inventory1 = new Inventory();
             inventory1.setSkuCode("iphone-13-red");
             inventory1.setQuantity(0);
-          /*  List<String> l = new ArrayList<>();
-            l.add("iphone-13-red");*/
+            List<String> l = new ArrayList<>();
+            l.add("iphone-13-red");
             inventoryRepository.save(inventory);
             inventoryRepository.save(inventory1);
-            log.info("_____find all record of inventory______");
-           /* List<Inventory> inv = inventoryRepository.findBySkuCodeIn(l);
-            log.info(String.valueOf(inv));*/
+            log.info("_____find record bz skuCode of inventory______");
+           List<Inventory> inv = inventoryRepository.findBySkuCodeIn(l);
+            log.info(String.valueOf(inv));
 
         };
     }

@@ -21,7 +21,7 @@ import java.util.UUID;
 public class OrderService {
     private final WebClient.Builder webClientBuilder;
     private final OrderRepository orderRepository;
-    public void placeOrder(OrderRequest orderRequest) throws IllegalAccessException {
+    public String placeOrder(OrderRequest orderRequest) throws IllegalAccessException {
             Order order = new Order();
             order.setOrderNumber(UUID.randomUUID().toString());
             List<OrderLineItems> orderLineItems = orderRequest.getOrderLineItemsDtoList().
@@ -43,6 +43,7 @@ public class OrderService {
         Boolean allProductsInStock = Arrays.stream(resArray).allMatch(InventoryResponse::isInStock);
         if(allProductsInStock){
                orderRepository.save(order);
+                return "Order placed successfully";
         }else{
                throw new IllegalAccessException("product is not on the stock, please try again later");
         }
