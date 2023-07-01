@@ -15,6 +15,7 @@
         <module>product</module>
         <module>orderService</module>
         <module>api-gateway</module>
+        <module>notify-service</module>
     </modules>
 
     <name>scm</name>

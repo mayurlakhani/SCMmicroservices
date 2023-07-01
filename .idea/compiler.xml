@@ -11,6 +11,7 @@
         <module name="product" />
         <module name="inventory" />
         <module name="eureka-server" />
+        <module name="notify-service" />
         <module name="orderService" />
       </profile>
     </annotationProcessing>
