@@ -10,4 +10,14 @@ docker run -d -p 9411:9411 openzipkin/zipkin
 https://developer.confluent.io/get-started/spring-boot/#kafka-setup
 
 ## To start the docker file
-docker compose up -d
+docker-compose up -d
+
+## Spring Boot Authentication Architecture 
+![spring-boot-authentication-spring-security-architecture](https://github.com/mayurlakhani/SCMmicroservices/assets/14820767/151be98e-829d-42af-92c5-8295a27d0a07)
+
+## JWT Authentication flow
+![spring-boot-authentication-jwt-spring-security-flow](https://github.com/mayurlakhani/SCMmicroservices/assets/14820767/a58f75f7-e2f1-45e5-b1ae-ea862c0d11cd)
+
+## JWT Refresh token flow
+![spring-boot-refresh-token-jwt](https://github.com/mayurlakhani/SCMmicroservices/assets/14820767/0ab7d021-27b8-448e-8b90-016bf453958c)
+
