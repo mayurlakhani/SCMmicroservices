@@ -13,7 +13,6 @@ import org.springframework.kafka.config.TopicBuilder;
 
 @Configuration
 @Slf4j
-@AllArgsConstructor
 public class KafkaTopicConfig {
     @Value("${spring.kafka.topic.name}")
     private String topicName;

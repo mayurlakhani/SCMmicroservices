@@ -1,4 +1,4 @@
-package com.microservices.jwtauthservice.payload.request;
+package com.microservices.jwtauthservice.payload.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

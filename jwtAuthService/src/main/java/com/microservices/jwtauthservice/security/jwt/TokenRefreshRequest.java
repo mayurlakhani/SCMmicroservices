@@ -1,2 +1,17 @@
-package com.microservices.jwtauthservice.security.jwt;public class TokenRefreshRequest {
+package com.microservices.jwtauthservice.security.jwt;
+
+import javax.validation.constraints.NotBlank;
+
+public class TokenRefreshRequest {
+    @NotBlank
+    private String refreshToken;
+
+    public String getRefreshToken() {
+        return refreshToken;
+    }
+
+    public void setRefreshToken(String refreshToken) {
+        this.refreshToken = refreshToken;
+    }
+
 }

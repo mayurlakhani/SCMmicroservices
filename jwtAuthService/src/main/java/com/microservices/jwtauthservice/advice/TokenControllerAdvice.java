@@ -1,7 +1,8 @@
-package com.microservices.jwtauthservice.controller;
+package com.microservices.jwtauthservice.advice;
 
 import java.util.Date;
 
+import com.microservices.jwtauthservice.exception.TokenRefreshException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;

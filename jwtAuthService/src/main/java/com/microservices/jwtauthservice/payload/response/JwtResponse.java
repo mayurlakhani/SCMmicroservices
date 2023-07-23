@@ -1,4 +1,4 @@
-package com.microservices.jwtauthservice.payload;
+package com.microservices.jwtauthservice.payload.response;
 
 import com.microservices.jwtauthservice.model.Role;
 import lombok.*;
@@ -25,7 +25,6 @@ public class JwtResponse {
         this.email = email;
         this.roles = roles;
     }
-
       public JwtResponse(String accessToken, String refreshToken, Long id, String username, String email, List<String> roles) {
         this.token = accessToken;
         this.refreshToken = refreshToken;

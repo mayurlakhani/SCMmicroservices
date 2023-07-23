@@ -1,4 +1,4 @@
-package com.microservices.jwtauthservice.dto;
+package com.microservices.jwtauthservice.payload.request;
 
 import lombok.*;
 

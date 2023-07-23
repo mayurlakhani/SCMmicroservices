@@ -8,20 +8,23 @@ import com.microservices.orderservice.model.Order;
 import com.microservices.orderservice.model.OrderLineItems;
 import com.microservices.orderservice.repository.OrderRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.sleuth.Span;
 import org.springframework.cloud.sleuth.Tracer;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
+import reactor.core.publisher.Mono;
 
 import javax.transaction.Transactional;
-import java.util.Arrays;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
 @Transactional
+@Slf4j
 public class OrderService {
     private final WebClient.Builder webClientBuilder;
     private final OrderRepository orderRepository;
@@ -51,8 +54,12 @@ public class OrderService {
                             uriBuilder -> uriBuilder.queryParam("skuCode", skuCodes).build())
                     .retrieve().bodyToMono(InventoryResponse[].class).block();      // to sync operation -> block
 
+            log.info("####   resArray {}",resArray);
+
+
             Boolean allProductsInStock = Arrays.stream(resArray).allMatch(InventoryResponse::isInStock);
-            if(allProductsInStock){
+
+           if(allProductsInStock){
                 orderRepository.save(order);
                 //Notify kafka
                 kafkaTemplate.send("notificationTopic", new OrderPlaceEvent(order.getOrderNumber()));

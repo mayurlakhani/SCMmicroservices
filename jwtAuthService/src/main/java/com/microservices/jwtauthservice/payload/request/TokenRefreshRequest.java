@@ -1,4 +1,4 @@
-package com.microservices.jwtauthservice.payload.response;
+package com.microservices.jwtauthservice.payload.request;
 
 import javax.validation.constraints.NotBlank;
 

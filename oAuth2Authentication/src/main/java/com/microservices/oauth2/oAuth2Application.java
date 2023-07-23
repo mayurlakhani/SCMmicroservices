@@ -1,2 +1,14 @@
-package com.microservices.oauth2;public class oAuth2Application {
+package com.microservices.oauth2;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class oAuth2Application {
+    public static void main(String[] args) {
+        SpringApplication.run(oAuth2Application.class, args);
+    }
+
+
+
 }
