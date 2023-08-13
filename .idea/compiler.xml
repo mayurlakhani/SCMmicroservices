@@ -8,8 +8,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="jwtAuthService" />
+        <module name="Account" />
         <module name="product" />
         <module name="orderService" />
+        <module name="AuthService" />
         <module name="api-gateway" />
         <module name="inventory" />
         <module name="oAuth2Authentication" />
@@ -22,7 +24,14 @@
       <module name="clients" target="17" />
       <module name="customer" target="17" />
       <module name="fraud" target="17" />
+      <module name="Person" target="17" />
       <module name="SCMmicroservices" target="17" />
+      <module name="SpringSecurityJwtToken" target="17" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Account" options="" />
+    </option>
   </component>
 </project>

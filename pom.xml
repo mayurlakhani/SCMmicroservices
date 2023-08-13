@@ -18,6 +18,9 @@
         <module>notify-service</module>
         <module>jwtAuthService</module>
         <module>oAuth2Authentication</module>
+        <module>Account</module>
+        <module>AuthService</module>
+
     </modules>
 
     <name>scm</name>
@@ -30,7 +33,7 @@
         <spring.boot.maven.plugin.version>2.5.7</spring.boot.maven.plugin.version>
         <spring.boot.dependencies.version>2.5.7</spring.boot.dependencies.version>
         <spring.cloud-version>2020.0.3</spring.cloud-version>
-        <image>amigoscode/${project.artifactId}:${project.version}</image>
+        <image>mtlkahani/${project.artifactId}:${project.version}</image>
     </properties>
 
     <dependencyManagement>

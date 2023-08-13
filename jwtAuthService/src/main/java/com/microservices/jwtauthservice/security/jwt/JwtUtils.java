@@ -32,7 +32,7 @@ public class JwtUtils {
                 .compact();
     }
     public String generateTokenFromUsername(String username) {
-        SignatureAlgorithm signatureAlgorithm = SignatureAlgorithm. HS256 ;
+        SignatureAlgorithm signatureAlgorithm = SignatureAlgorithm.HS256 ;
         return Jwts.builder().setSubject(username).setIssuedAt(new Date())
                 .setExpiration(new Date((new Date()).getTime() + jwtExpirationMs)).signWith(signatureAlgorithm, jwtSecret)
                 .compact();
@@ -59,7 +59,6 @@ public class JwtUtils {
         } catch (IllegalArgumentException e) {
             log.error("JWT claims string is empty: {}", e.getMessage());
         }
-
         return false;
     }
 }

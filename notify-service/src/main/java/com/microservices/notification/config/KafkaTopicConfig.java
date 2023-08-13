@@ -28,6 +28,5 @@ public class KafkaTopicConfig {
     public void listen(OrderPlaceEvent orderPlaceEvent) {
         //send email here
         log.info("Received notification for Order {}", orderPlaceEvent);
-
     }
 }

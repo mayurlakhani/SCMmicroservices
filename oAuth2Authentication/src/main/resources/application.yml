@@ -27,8 +27,8 @@ spring:
       client:
         registration:
           github:
-            client-id: 32fb32a76e19cccdc4bd
-            client-secret: efb5be8d3c98929aac687618a2d85ff62ffd8ffb
+            client-id: 32fb32a76e
+            client-secret: efb5be8d3c98929aac687618a2
 
 server:
   port: 8091
